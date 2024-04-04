@@ -2,6 +2,7 @@
 @font-face {
     font-family: JungleFever;
     src: url(../fonts/junglefe.ttf);
+    src: url(../fonts/junglefe.otf); /* Fallback */
 }
 
 @font-face {
@@ -10,34 +11,52 @@
 }
 
 /* Container Styles */
+article {
+    border-bottom: 1px solid black;
+}
+
 body {
     text-align: center;
 }
 
+footer {
+    background-color: white;
+    border-top: 1px solid black;
+    position: fixed;
+        bottom: 0;
+    width: 100%;
+}
+
 header {
-    border: 1px solid black;
+    border-top: 1px solid black;
 }
 
 nav {
-    border: 1px solid black;   
-}
-
-body {
-    border: 1px solid black;
-}
-
-footer {
-    border: 1px solid black;
-    position: absolute;
+    border-bottom: 1px solid black;  
+    border-top: 1px solid black;   
 }
 
 /* Text Styles */
-h1 {
+h1, h2, h3 {
     font-family: JungleFever;
+}
+
+h1.Name, h2.Name, h3.Name {
+    margin-bottom: 5px;
+    margin-top: 0px;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+p.Author {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+p.Description {
+    margin: 15px;
 }
 
 /* Interactive Styles */
@@ -46,4 +65,12 @@ button {
     margin: 10px;
     text-decoration: none;
     width: 100px;
+}
+
+/* Other Styles */
+img.Preview {
+    border: 1px solid black;
+    height: 120px;
+    margin: 15px;
+    width: 160px;
 }
