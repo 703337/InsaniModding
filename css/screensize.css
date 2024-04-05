@@ -1,0 +1,26 @@
+/* Styles for screens 640px or larger */
+@media (min-width: 640px) {
+    /* Container Styles */
+    /* Articles for mods and tools */
+    article.ModTool {
+        border-left: 2px solid #fcc600;
+        border-right: 2px solid #fcc600;
+        display: inline-block;
+        width: 373px;
+    }
+
+    /* Divs to keep a maximum of 3 mods or tools in a row */
+    div.ModToolContainer {
+        margin: auto;
+        max-width: 1508px;
+    }
+}
+
+/* Styles for screens smaller than 640px */
+@media (max-width: 639px) {
+    /* Interactive Styles */
+    /* Buttons to download mods and tools */
+    button.Download {
+        display: none;
+    }
+}

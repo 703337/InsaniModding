@@ -12,64 +12,115 @@
 
 /* Container Styles */
 article {
-    border-bottom: 1px solid black;
+    background-color: #deaf53;
+    border-bottom: 2px solid #fcc600;
+}
+
+/* Articles for the current page's name */
+article.PageName {
+    padding: 1px;
+}
+
+article.PageName h2 {
+    margin: 4px;
+}
+
+/* Article for the Novelty Hidden Fish */
+#NoveltyHiddenFish {
+    background: none;
+    border: none;
 }
 
 body {
+    background-attachment: fixed;
+    background-image: url(../images/backgrounds/CirclePurpulse.png);
+    background-position: center;
+    color: white;
     text-align: center;
 }
 
 footer {
-    background-color: white;
-    border-top: 1px solid black;
+    background-color: #deaf53;
+    border-top: 2px solid #fcc600;
     position: fixed;
         bottom: 0;
     width: 100%;
 }
 
 header {
-    border-top: 1px solid black;
+    background-image: url(../images/backgrounds/Aquarium2.webp);
+    background-position: center;
+    background-size: 100%;
+    padding: 1px;
 }
 
 nav {
-    border-bottom: 1px solid black;  
-    border-top: 1px solid black;   
+    background-color: #deaf53;
+    border-bottom: 2px solid #fcc600;
+    border-top: 2px solid #fcc600;
 }
 
 /* Text Styles */
 h1, h2, h3 {
+    color: #fcc600;
     font-family: JungleFever;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
 }
 
-h1.Name, h2.Name, h3.Name {
+/* Header to state the names of mods and tools */
+h3.Name {
     margin-bottom: 5px;
     margin-top: 0px;
 }
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
 }
 
+/* Paragraphs to state the authors of mods and tools */
 p.Author {
     margin-top: 5px;
     margin-bottom: 0px;
 }
 
+/* Paragraphs to describe mods and tools */
 p.Description {
     margin: 15px;
 }
 
 /* Interactive Styles */
 button {
+    background-color: #992fcE;
+    border: 2px solid #fcc600;
+    border-radius: 25px;
+    color: #fced00;
     font-family: JungleFever;
     margin: 10px;
+    padding: 3px;
     text-decoration: none;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    width: 125px;
+}
+
+/* Buttons in the nav */
+button.Nav {
+    background-color: #511c7A;
+    border: 2px solid #fcc600;
+    border-radius: 25px;
+    color: #fced00;
+    font-family: JungleFever;
+    margin: 10px;
+    padding: 3px;
+    text-decoration: none;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
     width: 100px;
 }
 
 /* Other Styles */
+/* Preview images for mods and tools */
 img.Preview {
-    border: 1px solid black;
+    border: 2px solid #fcc600;
     height: 120px;
     margin: 15px;
     width: 160px;
