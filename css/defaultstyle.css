@@ -36,6 +36,7 @@ body {
     background-image: url(../images/backgrounds/CirclePurpulse.png);
     background-position: center;
     color: white;
+    cursor: url("../images/misc/cursor.png"), auto;
     text-align: center;
 }
 
@@ -64,7 +65,7 @@ nav {
 h1, h2, h3 {
     color: #fcc600;
     font-family: JungleFever;
-    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    -webkit-text-stroke: 0.25px black;
 }
 
 /* Header to state the names of mods and tools */
@@ -90,8 +91,38 @@ p.Description {
 }
 
 /* Interactive Styles */
+a {
+    cursor: url("../images/misc/pointer.png"), pointer;
+}
+
 button {
     background-color: #992fcE;
+    border: 2px solid #fcc600;
+    border-radius: 25px;
+    color: #fced00;
+    cursor: url("../images/misc/pointer.png"), pointer;
+    font-family: JungleFever;
+    margin: 10px;
+    padding: 3px;
+    text-decoration: none;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    width: 125px;
+}
+/* :active doesn't work without this - see screensize.css for why this is identical to the regular style */
+button:hover {
+    background-color: #992fcE;
+    border: 2px solid #fcc600;
+    border-radius: 25px;
+    color: #fced00;
+    font-family: JungleFever;
+    margin: 10px;
+    padding: 3px;
+    text-decoration: none;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    width: 125px;
+}
+button:active {
+    background-color: #1d5a9b;
     border: 2px solid #fcc600;
     border-radius: 25px;
     color: #fced00;
@@ -106,6 +137,31 @@ button {
 /* Buttons in the nav */
 button.Nav {
     background-color: #511c7A;
+    border: 2px solid #fcc600;
+    border-radius: 25px;
+    color: #fced00;
+    font-family: JungleFever;
+    margin: 10px;
+    padding: 3px;
+    text-decoration: none;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    width: 100px;
+}
+/* :active doesn't work without this - see screensize.css for why this is identical to the regular style */
+button.Nav:hover {
+    background-color: #511c7A;
+    border: 2px solid #fcc600;
+    border-radius: 25px;
+    color: #fced00;
+    font-family: JungleFever;
+    margin: 10px;
+    padding: 3px;
+    text-decoration: none;
+    text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+    width: 100px;
+}
+button.Nav:active {
+    background-color: #beb300;
     border: 2px solid #fcc600;
     border-radius: 25px;
     color: #fced00;

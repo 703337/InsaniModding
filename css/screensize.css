@@ -14,6 +14,60 @@
         margin: auto;
         max-width: 1508px;
     }
+
+    /* Interactive Styles */
+    /* This style is not intended for mobile devices as :hover often looks weird */
+    button:hover {
+        background-color: #00c3fb;
+        border: 2px solid #fcc600;
+        border-radius: 25px;
+        color: white;
+        font-family: JungleFever;
+        margin: 10px;
+        padding: 3px;
+        text-decoration: none;
+        text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+        width: 125px;
+    }
+    /* Didn't expect it to be necessary, but having this only in defaultstyle.css prevents it from working when this @media block is active */
+    button:active {
+        background-color: #1d5a9b;
+        border: 2px solid #fcc600;
+        border-radius: 25px;
+        color: #fced00;
+        font-family: JungleFever;
+        margin: 10px;
+        padding: 3px;
+        text-decoration: none;
+        text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+        width: 125px;
+    }
+
+    /* This style is not intended for mobile devices as :hover often looks weird */
+    button.Nav:hover {
+        background-color: #fff000;
+        border: 2px solid #fcc600;
+        border-radius: 25px;
+        color: #c5c5fc;
+        font-family: JungleFever;
+        margin: 10px;
+        padding: 3px;
+        text-decoration: none;
+        text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+        width: 100px;
+    }
+    button.Nav:active {
+        background-color: #beb300;
+        border: 2px solid #fcc600;
+        border-radius: 25px;
+        color: #fced00;
+        font-family: JungleFever;
+        margin: 10px;
+        padding: 3px;
+        text-decoration: none;
+        text-shadow: 1px 1px black, -1px -1px black, 1px -1px black, -1px 1px black;
+        width: 100px;
+    }
 }
 
 /* Styles for screens smaller than 640px */
