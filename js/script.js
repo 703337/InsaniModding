@@ -1,5 +1,20 @@
 // Ensure no code is executed before the page is loaded
 $(function() {
+    // The following chunk of code is for hiding and unhiding the Modal Form
+    $("#ModalForm").hide();
+    $("#ModalFormReveal").click(function(){
+        // If the Modal Form is hidden, show it and change #ModalFormReveal's text to "Back"
+        if ($("#ModalForm").is(":hidden")) {
+            $("#ModalForm").show();
+            $("#ModalFormReveal").html("Back");
+        }
+        // Otherwise, hide the Modal Form and change #ModalFormReveal's text back to "Feedback"
+        else {
+            $("#ModalForm").hide();
+            $("#ModalFormReveal").html("Feedback");
+        }
+    });
+
     // The following code is for every article that has the ID associated with a mod or tools hosted on the site. This is done to make reordering
     // (if done for whatever reason) much easier to do in the future
     // mods.html

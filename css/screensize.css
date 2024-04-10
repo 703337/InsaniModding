@@ -1,6 +1,14 @@
 /* Styles for screens 640px or larger */
 @media (min-width: 640px) {
     /* Container Styles */
+    /* Article for website info on the Home page */
+    article.HomepageInfo {
+        border-left: 2px solid #fcc600;
+        border-right: 2px solid #fcc600;
+        margin: auto;
+        max-width: 758px;
+    }
+
     /* Articles for mods and tools */
     article.ModTool {
         border-left: 2px solid #fcc600;
